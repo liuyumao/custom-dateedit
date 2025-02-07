@@ -1,0 +1,44 @@
+QComboBox {
+    background-color: #ffffff; /* 背景颜色 */
+    border: 1px solid #cccccc; /* 边框 */
+    border-radius: 3px; /* 边框圆角 */
+    font-family: 'Microsoft Yahei'; /* 字体 */
+    font-size: 14px; /* 字体大小 */
+    height: 28px;
+}
+
+QComboBox::drop-down {
+    subcontrol-position: top right;
+    width: 18px; /* 下拉箭头的宽度 */
+    border-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(/path/to/your/image.png); /* 下拉箭头的图片 */
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #cccccc; /* 下拉列表的边框 */
+    selection-background-color: #6a6ea9; /* 选中项的背景颜色 */
+    selection-color: #ffffff; /* 选中项的文本颜色 */
+}
+
+QLineEdit {
+    background-color: #ffffff; /* 背景颜色 */
+    border: 1px solid #cccccc; /* 边框 */
+    border-radius: 3px; /* 边框圆角 */
+    font-family: 'Microsoft Yahei'; /* 字体类型 */
+    font-size: 14px; /* 字体大小 */
+    color: #000000; /* 文本颜色 */
+    height: 28px;
+}
+
+QLineEdit:focus {
+    border-color: #66afe9; /* 获得焦点时的边框颜色 */
+    outline: none; /* 去除焦点时的外轮廓线 */
+}
+
+QLineEdit:disabled {
+    background-color: #e6e6e6; /* 禁用状态下的背景颜色 */
+    color: #a6a6a6; /* 禁用状态下的文本颜色 */
+}
